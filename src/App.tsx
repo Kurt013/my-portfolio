@@ -1,13 +1,12 @@
-import { useState } from 'react'
 import './App.css'
-import ResponsiveAppBar from './components/ResponsiveAppBar';
+import HeaderNav from './components/HeaderNav'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const navItems = ['Home', 'Skills', 'Projects', 'Certifications', 'Contact']
 
   return (
     <>
-      <ResponsiveAppBar/>
+      <HeaderNav navItems={navItems} />
     </>
   )
 }
