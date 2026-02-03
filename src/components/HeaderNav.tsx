@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FolderCode } from "lucide-react";
 
 interface HeaderNavProps {
   navItems?: string[];
@@ -10,7 +11,9 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
   return (
     <header className="fixed left-0 right-0 top-0 bg-white shadow-md z-10">
       <nav className="max-w-5xl mx-auto flex items-center justify-between h-16 px-4">
-        <div className="font-bold text-xl">My Portfolio</div>
+        <div>
+          <FolderCode className="h-7 w-7" />
+        </div>
         {/* Hamburger button */}
         <button
           className="md:hidden flex flex-col justify-center items-center w-8 h-8"
