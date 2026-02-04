@@ -1,9 +1,6 @@
 import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { ChevronRight } from "lucide-react";
 import {
   Card,
-  CardAction,
   CardDescription,
   CardFooter,
   CardHeader,
