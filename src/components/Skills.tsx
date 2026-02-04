@@ -1,6 +1,7 @@
 import Languages from "@/components/Languages";
 import FrameworksLibraries from "@/components/FrameworksLibraries";
 import Databases from "@/components/Databases";
+import ToolsPlatforms from "@/components/ToolsPlatforms";
 
 const Skills = () => {
   return (
@@ -13,11 +14,10 @@ const Skills = () => {
       }
 
       <h2 className="text-3xl md:text-4xl font-bold pb-2 flex-">Tech Stack</h2>
-        <Languages />
-        <FrameworksLibraries />
-        <Databases />
-
-      
+      <Languages />
+      <FrameworksLibraries />
+      <Databases />
+      <ToolsPlatforms />
     </section>
   );
 };
