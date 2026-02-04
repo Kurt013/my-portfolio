@@ -6,12 +6,13 @@ const projects = [
     role: "Frontend Developer",
     description:
       "A centralized, role-based document management system designed to improve access to academic documents for 10 campus organizations and personnel, enabling secure, organized, and efficient document sharing across the institution.",
-    techStack: ["Laravel", "Tailwind CSS"],
+    techStack: ["Laravel", "MySQL", "Tailwind CSS"],
   },
   {
-    githubThumbnail: "https://opengraph.githubassets.com/5a700a9f28da9bbff08ff1f3251460b6df3607233715791462dc576b8555fc33/Kurt013/Alignify-ChromeExtension",
+    githubThumbnail:
+      "https://opengraph.githubassets.com/5a700a9f28da9bbff08ff1f3251460b6df3607233715791462dc576b8555fc33/Kurt013/Alignify-ChromeExtension",
     projectName: "Alignify",
-    role: "Frontend Developer",
+    role: "",
     description: "A posture corrector for long sitting sessions",
     techStack: [
       "Teachable Machine",
@@ -20,6 +21,30 @@ const projects = [
       "Manifest V3",
       "Chrome Storage API",
     ],
+  },
+  {
+    githubThumbnail:
+      "https://opengraph.githubassets.com/3ecbef62bfbde04c31342226734e843130128f46c2e3b713e1de636e62c968c6/Kurt013/Villa-Gilda-Resort",
+    projectName: "Web-Based Reservation System",
+    role: "Frontend Developer",
+    description: "A web-based reservation system built with PHP & MySQL",
+    techStack: ["PHP", "MySQL", "HTML/CSS", "Javascript"],
+  },
+  {
+    githubThumbnail:
+      "https://opengraph.githubassets.com/71a2e15730bf9eb462b71a07b5d2a33d01f0e709b0f0f10d0491931b6f7897fb/Kurt013/gacha-pull-logger",
+    projectName: "Gacha Pull Logger",
+    role: "",
+    description: "A fan-made gacha pull logging and analytics web application",
+    techStack: ["PHP", "MySQL", "HTML/CSS", "Javascript"],
+  },
+  {
+    githubThumbnail:
+      "https://opengraph.githubassets.com/877cd249c9eae33509cbd1c0649ec52e443f3cf685371cc38095f5a520350ee6/Kurt013/sinalhan",
+    projectName: "Document Issuance System",
+    role: "Backend Developer",
+    description: "A Web-Based Document Issuance System with QR Code Technology",
+    techStack: ["PHP", "MySQL", "HTML/CSS", "Javascript"],
   },
 ];
 

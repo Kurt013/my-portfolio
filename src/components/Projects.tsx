@@ -16,14 +16,13 @@ const Projects = () => {
   return (
     <SectionTemplate id="projects">
       <h2 className="text-3xl text-center md:text-4xl font-bold pb-2">Projects</h2>
-      <div className="flex gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {projects.map((item, index) => {
             return (
               <Card
                 key={item + "-" + index}
-                className="relative overflow-hidden mx-auto w-full max-w-sm pt-0"
+                className="relative overflow-hidden w-full pt-0"
               >
-                <div className="absolute inset-0 z-30 aspect-video " />
                 <img
                   src={item.githubThumbnail}
                   alt={item.projectName + " Github Repository Thumbnail"}
