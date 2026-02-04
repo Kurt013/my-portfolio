@@ -9,8 +9,8 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 bg-white shadow-md z-10">
-      <nav className="max-w-5xl mx-auto flex items-center justify-between h-16 px-4">
+    <header className="fixed left-0 right-0 top-0 bg-inherit shadow-md z-9999">
+      <nav className="max-w-5xl mx-auto flex items-center backdrop-blur-xs justify-between h-16 px-4">
         <div>
           <FolderCode className="h-7 w-7" />
         </div>
@@ -21,13 +21,13 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
           aria-label="Toggle navigation"
         >
           <span
-            className={`block h-0.5 w-6 bg-gray-700 transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`}
           ></span>
           <span
-            className={`block h-0.5 w-6 bg-gray-700 my-1 transition-all duration-200 ${open ? "opacity-0" : ""}`}
+            className={`block h-0.5 w-6 bg-foreground my-1 transition-all duration-200 ${open ? "opacity-0" : ""}`}
           ></span>
           <span
-            className={`block h-0.5 w-6 bg-gray-700 transition-all duration-200 ${open ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "-rotate-45 -translate-y-2" : ""}`}
           ></span>
         </button>
         {/* Desktop nav */}
@@ -36,7 +36,7 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-150 capitalize"
+                className="text-foreground transition-colors duration-150 capitalize"
               >
                 {item}
               </a>
@@ -56,11 +56,11 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
       />
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-30 transform transition-transform duration-300 md:hidden
+        className={`fixed top-0 right-0 h-full w-64 bg-background shadow-lg z-30 transform transition-transform duration-300 md:hidden
   ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         <button
-          className="absolute top-4 left-4 text-2xl"
+          className="absolute text-foreground top-4 left-4 text-2xl"
           onClick={() => setOpen(false)}
           aria-label="Close sidebar"
         >
