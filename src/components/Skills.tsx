@@ -2,10 +2,11 @@ import Languages from "@/components/Languages";
 import FrameworksLibraries from "@/components/FrameworksLibraries";
 import Databases from "@/components/Databases";
 import ToolsPlatforms from "@/components/ToolsPlatforms";
+import SectionTemplate from "./sections/SectionTemplate";
 
 const Skills = () => {
   return (
-    <section className="max-w-5xl mx-auto">
+    <SectionTemplate id="skills">
       {
         // • Languages: PHP, Python, JavaScript, HTML5, CSS3, SQL, Java, C++, R
         // • Frameworks & Libraries: Laravel, Flask, React, Tailwind CSS, Shiny
@@ -18,7 +19,7 @@ const Skills = () => {
       <FrameworksLibraries />
       <Databases />
       <ToolsPlatforms />
-    </section>
+    </SectionTemplate>
   );
 };
 

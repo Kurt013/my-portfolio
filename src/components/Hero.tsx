@@ -1,8 +1,9 @@
 import { twMerge } from "tailwind-merge";
+import SectionTemplate from "@/components/sections/SectionTemplate";
 
 const Hero = () => {
   return (
-    <div
+    <SectionTemplate
       id="home"
       className={twMerge(
         "min-h-screen min-h-dvh max-w-5xl mx-auto flex flex-col justify-center",
@@ -20,7 +21,7 @@ const Hero = () => {
             based in <strong>Santa Rosa City, Laguna.</strong>
           </p>
       </div>
-    </div>
+    </SectionTemplate>
   );
 };
 
