@@ -25,9 +25,9 @@ const Resume = () => {
             <CardTitle className="text-xl">Software Developer</CardTitle>
           </CardHeader>
           <CardContent className="text-foreground/70">
-              With hands-on experience building full-stack
-              and backend web applications. Focused on writing clean, scalable code and
-              delivering solutions that solve real-world problems.
+            With hands-on experience building full-stack and backend web
+            applications. Focused on writing clean, scalable code and delivering
+            solutions that solve real-world problems.
           </CardContent>
           <CardFooter>
             <Button variant="outline" asChild className="w-full">
@@ -35,7 +35,7 @@ const Resume = () => {
                 href="https://drive.google.com/drive/folders/1o1dGH22KkmVKjPmAaL89Ova3y_s22hWg?usp=sharing"
                 target="_blank"
               >
-                View Resume
+                View
                 <SquareArrowOutUpRight />
               </a>
             </Button>
