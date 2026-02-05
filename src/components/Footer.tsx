@@ -1,5 +1,3 @@
-import { PhoneCall } from "lucide-react";
-
 const Footer = () => {
   return (
     <footer
