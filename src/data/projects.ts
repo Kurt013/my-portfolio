@@ -27,7 +27,7 @@ const projects = [
       "https://opengraph.githubassets.com/3ecbef62bfbde04c31342226734e843130128f46c2e3b713e1de636e62c968c6/Kurt013/Villa-Gilda-Resort",
     projectName: "Web-Based Reservation System",
     role: "Frontend Developer",
-    description: "A web-based reservation system built with PHP & MySQL",
+    description: "A web-based reservation system for Villa Gilda Resort",
     techStack: ["PHP", "MySQL", "HTML/CSS", "Javascript"],
   },
   {
@@ -36,14 +36,14 @@ const projects = [
     projectName: "Gacha Pull Logger",
     role: "",
     description: "A fan-made gacha pull logging and analytics web application",
-    techStack: ["PHP", "MySQL", "HTML/CSS", "Javascript"],
+    techStack: ["Shiny", "SQLite", "HTML/CSS", "Javascript"],
   },
   {
     githubThumbnail:
       "https://opengraph.githubassets.com/877cd249c9eae33509cbd1c0649ec52e443f3cf685371cc38095f5a520350ee6/Kurt013/sinalhan",
     projectName: "Document Issuance System",
     role: "Backend Developer",
-    description: "A Web-Based Document Issuance System with QR Code Technology",
+    description: "A web-based document issuance system with QR code technology",
     techStack: ["PHP", "MySQL", "HTML/CSS", "Javascript"],
   },
 ];
