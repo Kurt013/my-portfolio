@@ -5,7 +5,7 @@ const ToolsPlatforms = () => {
 
   return (
     <>
-      <h3>Frameworks & Libraries</h3>
+      <h3>Tools & Platforms</h3>
       <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2">
         {toolsAndPlatforms.map((toolAndPlatform, index) => {
           return (
