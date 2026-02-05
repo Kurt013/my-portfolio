@@ -1,12 +1,12 @@
-import { twMerge } from "tailwind-merge";
+import { cn } from "@/lib/utils";
 import SectionTemplate from "@/components/sections/SectionTemplate";
 
 const Hero = () => {
   return (
     <SectionTemplate
       id="home"
-      className={twMerge(
-        "min-h-screen min-h-dvh max-w-5xl mx-auto flex flex-col justify-center",
+      className={cn(
+        "min-h-screen min-h-dvh flex flex-col justify-center"
       )}
     >
       <div className="w-full max-w-xl">
