@@ -10,41 +10,43 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 bg-background/55 backdrop-blur-xs shadow-md z-9999">
-      <nav className="max-w-5xl mx-auto flex items-center justify-between h-16 px-4">
+    <header className="fixed left-0 right-0 top-0 shadow-md z-9999">
+      <nav className="max-w-5xl mx-auto flex bg-background/55 backdrop-blur-xs items-center justify-between h-16 px-4">
         <div>
           <FolderCode className="h-7 w-7" />
         </div>
         {/* Hamburger button */}
-        <button
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8"
-          onClick={() => setOpen((prev) => !prev)}
-          aria-label="Toggle navigation"
-        >
-          <span
-            className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`}
-          ></span>
-          <span
-            className={`block h-0.5 w-6 bg-foreground my-1 transition-all duration-200 ${open ? "opacity-0" : ""}`}
-          ></span>
-          <span
-            className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "-rotate-45 -translate-y-2" : ""}`}
-          ></span>
-        </button>
-        {/* Desktop nav */}
-        <ul className="hidden md:flex gap-6">
-          {navItems.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item.toLowerCase()}`}
-                className="text-foreground transition-colors duration-150 capitalize"
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <ModeToggle />
+        <div className="flex items-center gap-6">
+          <button
+            className="md:hidden flex flex-col justify-center items-center w-8 h-8"
+            onClick={() => setOpen((prev) => !prev)}
+            aria-label="Toggle navigation"
+          >
+            <span
+              className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`}
+            ></span>
+            <span
+              className={`block h-0.5 w-6 bg-foreground my-1 transition-all duration-200 ${open ? "opacity-0" : ""}`}
+            ></span>
+            <span
+              className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "-rotate-45 -translate-y-2" : ""}`}
+            ></span>
+          </button>
+          {/* Desktop nav */}
+          <ul className="hidden md:flex gap-6">
+            {navItems.map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="text-foreground transition-colors duration-150 capitalize"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <ModeToggle />
+        </div>
       </nav>
       {/* Sidebar overlay */}
       <div
@@ -58,7 +60,7 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
       />
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 right-0 h-full w-64 bg-background shadow-lg z-30 transform transition-transform duration-300 md:hidden
+        className={`fixed top-0 right-0 h-full bg-background w-64 shadow-lg z-30 transform transition-transform duration-300 md:hidden
   ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         <button
@@ -73,7 +75,7 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}
-                className="block text-gray-700 hover:text-blue-600 transition-colors duration-150 capitalize text-lg"
+                className="block transition-colors duration-150 capitalize text-lg"
                 onClick={() => setOpen(false)}
               >
                 {item}
