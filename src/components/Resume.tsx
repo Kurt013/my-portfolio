@@ -17,7 +17,7 @@ const Resume = () => {
       className="text-center min-h-screen flex justify-center items-center"
     >
       <div className="">
-        <h2 className="text-3xl text-center md:text-4xl font-bold pb-6">
+        <h2 className="text-3xl text-center md:text-4xl font-bold pb-4">
           Resume
         </h2>
         <Card className="mx-auto w-full h-full max-w-md">

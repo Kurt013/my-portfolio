@@ -5,8 +5,8 @@ const Languages = () => {
 
   return (
     <>
-      <h3>Languages</h3>
-      <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2">
+      <h3 className="text-xl md:text-2xl font-bold pb-2">Languages</h3>
+      <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2 pb-4">
         {languages.map((language, index) => {
           return (
             <li key={index}>

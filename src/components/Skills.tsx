@@ -14,7 +14,7 @@ const Skills = () => {
         // • Tools & Platforms: Git, GitHub, Docker, Jira, Confluence, Figma, Google Search Console
       }
 
-      <h2 className="text-3xl md:text-4xl font-bold pb-2 flex-">Tech Stack</h2>
+      <h2 className="text-3xl md:text-4xl font-bold pb-4">Tech Stack</h2>
       <Languages />
       <FrameworksLibraries />
       <Databases />

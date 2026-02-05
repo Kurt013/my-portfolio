@@ -12,7 +12,7 @@ import projects from "@/data/projects";
 const Projects = () => {
   return (
     <SectionTemplate id="projects">
-      <h2 className="text-3xl text-center md:text-4xl font-bold pb-2">Projects</h2>
+      <h2 className="text-3xl text-center md:text-4xl font-bold pb-4">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {projects.map((item, index) => {
             return (
