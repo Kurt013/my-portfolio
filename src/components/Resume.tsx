@@ -17,19 +17,19 @@ const Resume = () => {
       className="text-center min-h-screen flex justify-center items-center"
     >
       <div className="">
-        <h2 className="sr-only">
-          Resume
-        </h2>
+        <h2 className="sr-only">Resume</h2>
         <Card className="mx-auto w-full h-full max-w-md">
           <CardHeader>
-            <CardTitle>Software Developer</CardTitle>
+            <CardTitle aria-label="Software Developer, IT Student">
+              Software Developer | IT Student
+            </CardTitle>
             <CardDescription>
-              Student at Polytechnic University of the Philippines
+              Polytechnic University of the Philippines - Santa Rosa Campus
             </CardDescription>
           </CardHeader>
           <CardContent>
-            With hands-on experience building full-stack and backend web
-            applications.
+            With hands-on experience developing web applications across frontend,
+            backend, and full-stack.
           </CardContent>
           <CardFooter>
             <Button variant="outline" asChild className="w-full">
