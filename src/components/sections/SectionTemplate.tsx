@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 interface SectionTemplateProps {
   id?: string;
@@ -8,7 +9,7 @@ interface SectionTemplateProps {
 
 const SectionTemplate = ({ id, className, children }: SectionTemplateProps) => {
   return (
-    <section id={id} className={className + " max-w-5xl mx-auto pb-4"}>
+    <section id={id} className={cn(className, "max-w-5xl mx-auto")}>
       {children}
     </section>
   );
