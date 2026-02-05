@@ -11,8 +11,8 @@ const Hero = () => {
         <h1 className="text-4xl md:text-5xl font-bold pb-2">
           Hi, I'm Kurt Vincent Almodovar
         </h1>
-        <p className="text-base md:text-xl text-gray-500 pb-4">
-          Software Developer
+        <p className="text-base md:text-xl pb-4">
+          <em>Software Developer</em>
         </p>
         <p className="text-lg">
           Building reliable applications across
