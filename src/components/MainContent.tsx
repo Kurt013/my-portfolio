@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Certifications from "@/components/Certifications";
 import Resume from "@/components/Resume";
 
 const MainContent = () => {
@@ -9,6 +10,7 @@ const MainContent = () => {
       <Hero />
       <Skills />
       <Projects />
+      <Certifications />
       <Resume />
     </main>
   );
