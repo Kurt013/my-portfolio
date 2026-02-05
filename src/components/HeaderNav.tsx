@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FolderCode } from "lucide-react";
+import { ModeToggle } from "@/components/ui/ModeToggle";
 
 interface HeaderNavProps {
   navItems?: string[];
@@ -9,8 +10,8 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 bg-inherit shadow-md z-9999">
-      <nav className="max-w-5xl mx-auto flex items-center backdrop-blur-xs justify-between h-16 px-4">
+    <header className="fixed left-0 right-0 top-0 bg-background/55 backdrop-blur-xs shadow-md z-9999">
+      <nav className="max-w-5xl mx-auto flex items-center justify-between h-16 px-4">
         <div>
           <FolderCode className="h-7 w-7" />
         </div>
@@ -43,6 +44,7 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
             </li>
           ))}
         </ul>
+        <ModeToggle />
       </nav>
       {/* Sidebar overlay */}
       <div
