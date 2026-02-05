@@ -9,7 +9,7 @@ interface SectionTemplateProps {
 
 const SectionTemplate = ({ id, className, children }: SectionTemplateProps) => {
   return (
-    <section id={id} className={cn(className, "max-w-5xl mx-auto")}>
+    <section id={id} className={cn(className, "max-w-5xl mx-auto pb-10")}>
       {children}
     </section>
   );
