@@ -12,8 +12,10 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
   return (
     <header className="fixed left-0 right-0 top-0 shadow-md backdrop-blur-xs z-9999 bg-background/55">
       <nav className="max-w-5xl mx-auto flex items-center justify-between h-16 px-4">
-        <div>
-          <FolderCode className="h-7 w-7" />
+        <div className="flex items-center">
+          <a aria-label="Navigate to Home" href="#home" className="inline-block transition-all hover:scale-120">
+            <FolderCode className="h-7 w-7" />
+          </a>
         </div>
         {/* Hamburger button */}
         <div className="flex items-center gap-6">
