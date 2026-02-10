@@ -10,44 +10,50 @@ const HeaderNav = ({ navItems = [] }: HeaderNavProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 shadow-md backdrop-blur-xs z-9999 bg-background/55">
-      <nav className="max-w-5xl mx-auto flex items-center justify-between h-16 px-4">
-        <div className="flex items-center">
-          <a aria-label="Navigate to Home" href="#home" className="inline-block transition-all hover:scale-120">
-            <FolderCode className="h-7 w-7" />
-          </a>
-        </div>
-        {/* Hamburger button */}
-        <div className="flex items-center gap-6">
-          <button
-            className="md:hidden flex flex-col justify-center items-center w-8 h-8"
-            onClick={() => setOpen((prev) => !prev)}
-            aria-label="Toggle navigation"
-          >
-            <span
-              className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`}
-            ></span>
-            <span
-              className={`block h-0.5 w-6 bg-foreground my-1 transition-all duration-200 ${open ? "opacity-0" : ""}`}
-            ></span>
-            <span
-              className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "-rotate-45 -translate-y-2" : ""}`}
-            ></span>
-          </button>
-          {/* Desktop nav */}
-          <ul className="hidden md:flex gap-6">
-            {navItems.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="text-foreground transition-colors duration-150 capitalize"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <ModeToggle />
+    <header className="fixed left-0 right-0 top-0 z-9999">
+      <nav className="w-full bg-background/55 shadow-md backdrop-blur-xs px-4 h-16">
+        <div className="flex items-center justify-between max-w-5xl mx-auto w-full h-full">
+          <div className="flex items-center">
+            <a
+              aria-label="Navigate to Home"
+              href="#home"
+              className="inline-block transition-all hover:scale-120"
+            >
+              <FolderCode className="h-7 w-7" />
+            </a>
+          </div>
+          {/* Hamburger button */}
+          <div className="flex items-center gap-6">
+            <button
+              className="md:hidden flex flex-col justify-center items-center w-8 h-8"
+              onClick={() => setOpen((prev) => !prev)}
+              aria-label="Toggle navigation"
+            >
+              <span
+                className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`}
+              ></span>
+              <span
+                className={`block h-0.5 w-6 bg-foreground my-1 transition-all duration-200 ${open ? "opacity-0" : ""}`}
+              ></span>
+              <span
+                className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "-rotate-45 -translate-y-2" : ""}`}
+              ></span>
+            </button>
+            {/* Desktop nav */}
+            <ul className="hidden md:flex gap-6">
+              {navItems.map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="text-foreground transition-colors duration-150 capitalize"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <ModeToggle />
+          </div>
         </div>
       </nav>
       {/* Sidebar overlay */}
